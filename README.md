@@ -65,6 +65,7 @@ Employ your knowledge of logistic regression to complete the following steps:
     * Print the classification report.
 
 4. Answer the following question: How well does the logistic regression model predict both the `0` (healthy loan) and `1` (high-risk loan) labels?
+   * The logistic regression model predicts healthy loans (label 0) with nearly perfect accuracy, making it highly reliable for identifying loans that are not at risk of defaulting. It also does a good job of predicting high-risk loans (label 1), which is critical for managing and mitigating credit risk. The slight decrease in precision and recall for high-risk loans compared to healthy loans reflects the challenge of predicting the minority class in an imbalanced dataset. Nonetheless, the model's ability to identify a significant portion of the actual high-risk loans with relatively high precision and recall makes it a valuable tool in credit risk assessments.
 
 ### Predict a Logistic Regression Model with Resampled Training Data
 
@@ -85,6 +86,7 @@ To do so, complete the following steps:
     * Print the classification report.
 
 4. Answer the following question: How well does the logistic regression model, fit with oversampled data, predict both the `0` (healthy loan) and `1` (high-risk loan) labels?
+   * The logistic regression model, when fitted with oversampled data, significantly improves its prediction capability for high-risk loans (1) without severely compromising its ability to predict healthy loans (0). The oversampling technique helps in addressing the class imbalance issue, allowing the model to learn better from the minority class. As a result, the model shows a higher recall for high-risk loans, meaning it can identify a greater proportion of actual high-risk loans, which is crucial for managing credit risk effectively. The precision for high-risk loans might slightly decrease due to the model predicting more loans as high risk, but this trade-off is often acceptable in risk management to ensure fewer high-risk loans go undetected.
 
 ### Write a Credit Risk Analysis Report
 
